@@ -22,17 +22,17 @@ hamburger.addEventListener("click", () => {
 const html = document.querySelector("html");
 const themeBtn = document.getElementById("theme-toggle");
 
-if (localStorage.getItem("mode") === "dark") {
-  darkMode();
-} else {
+if (localStorage.getItem("mode") === "light") {
   lightMode();
+} else {
+  darkMode();
 }
 
 themeBtn.addEventListener("click", (e) => {
-  if (localStorage.getItem("mode") === "light") {
-    darkMode();
-  } else {
+  if (localStorage.getItem("mode") === "dark") {
     lightMode();
+  } else {
+    darkMode();
   }
 });
 
