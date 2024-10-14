@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="navbar" class="sticky top-0 z-50 duration-300">
+      <nav class="relative container flex justify-between items-center">
+        <div class="py-5">
+          <h3 id="heading" class="text-2xl font-medium">Portfolio</h3>
+        </div>
+
+        <div
+          id="nav-menu"
+          class="hidden absolute top-0 left-0 bg-primaryColor w-full py-24 lg:block lg:bg-transparent lg:static lg:py-0 lg:border-none lg:w-auto lg:ml-auto"
+        >
+          <ul
+            class="flex flex-col items-center text-center gap-8 lg:flex-row lg:gap-5"
+          >
+            <li>
+              <a href="#exp_edu" class="nav-link">Resume</a>
+            </li>
+            <li>
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li>
+              <a href="#recent_works" class="nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link">contact</a>
+            </li>
+          </ul>
+
+          <div
+            id="nav-close"
+            class="absolute top-6 right-3 md:right-8 text-whiteColor text-3xl cursor-pointer lg:hidden"
+          >
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <i
+            class="ri-moon-line cursor-pointer ml-4 text-2xl"
+            id="theme-toggle"
+          ></i>
+
+          <div id="hamburger" class="lg:hidden">
+            <i class="ri-menu-2-line cursor-pointer text-2xl"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--~~~~~~~~~~~~~~~ Hero Section ~~~~~~~~~~~~~~~-->
+      <section id="hero" class="relative">
+        <div
+          class="absolute right-0 top-[-20%] w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px]"
+        ></div>
+
+        <div class="container">
+          <!-- <div
+            class="hidden md:block absolute top-0 left-[30%] lg:left-[35%] animate-scaleAnimation"
+          >
+            <p
+              class="font-Londrina text-[400px] lg:text-[400px] text-primaryColorLight uppercase -z-10 opacity-5"
+            >
+              Hi
+            </p>
+          </div> -->
+
+          <div class="flex items-center justify-center text-center">
+            <div class="space-y-2">
+              <p class="font-Londrina text-3xl mb-6">Hi,</p>
+              <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+                I am Kishore Koppula
+              </h3>
+              <h1>
+                <span class="title">Web Developer</span>
+              </h1>
+
+              <p
+                class="max-w-4xl text-[14px] md:text-[16px] lg:text-[18px] pb-5 text-justify"
+              >
+                Result-oriented Developer with expertise in developing full
+                stack web applications using
+                <b>MERN stack, Java Spring Boot framework</b> and proficiency in
+                front-end technologies including
+                <b>HTML5, CSS3, JavaScript and React JS</b>. Possesses a strong
+                understanding of <b>Agile Scrum methodology</b> and have
+                experience in developing <b>RESTful APIs</b>. Passionate about
+                contributing my technical skills and collaborating with a
+                dynamic team to achieve organizational goals through meaningful
+                contributions.
+              </p>
+
+              <div class="flex items-center justify-center flex-wrap gap-5">
+                <button class="btn_outline">
+                  <a href="Kishore_Resume.pdf" download>
+                    Download Resume <i class="fa-solid fa-download"></i>
+                  </a>
+                </button>
+
+                <div class="flex items-center gap-5">
+                  <div class="social-icon">
+                    <a
+                      href="https://www.linkedin.com/in/kishorekoppula906"
+                      class="z-10"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </div>
+
+                  <div class="social-icon">
+                    <a href="https://github.com/kishore906" class="z-10">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--~~~~~~~~~~~~~~~ Experience & Education ~~~~~~~~~~~~~~~-->
+      <section id="exp_edu" class="bg-sectionColor dark:bg-darkSectionColor">
+        <div class="container w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- experience -->
+          <div>
+            <div class="flex items-center gap-3">
+              <div
+                class="text-2xl text-primaryColorLight md:text-3xl lg:text-4xl"
+              >
+                <i class="fa-solid fa-medal"></i>
+              </div>
+              <h2 class="subtitle">Experience</h2>
+            </div>
+
+            <!-- Card -->
+            <div class="my-10 space-y-5 md:space-y-10">
+              <div
+                class="exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300"
+              >
+                <p class="text-primaryColorLight text-sm font-bold pb-3">
+                  June 2022 - June 2023
+                </p>
+                <p class="text-xl font-bold uppercase mb-2">
+                  Associate Java Developer
+                </p>
+                <p>Infosys Technologies Limted, Sydney, Australia</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div>
+            <div class="flex items-center gap-3">
+              <div
+                class="text-2xl text-primaryColorLight md:text-3xl lg:text-4xl"
+              >
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <h2 class="subtitle">Education</h2>
+            </div>
+
+            <!-- Card -->
+            <div class="my-10 space-y-5 md:space-y-10">
+              <!-- Card 1 -->
+              <div
+                class="edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300"
+              >
+                <p class="text-primaryColorLight text-sm font-bold pb-3">
+                  June 2016 - June 2018
+                </p>
+                <p class="text-xl font-bold uppercase mb-2">
+                  Master In Information Technology
+                </p>
+                <p>University of Southern Queensland, Toowoomba, Australia</p>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300"
+              >
+                <p class="text-primaryColorLight text-sm font-bold pb-3">
+                  June 2011 - June 2015
+                </p>
+                <p class="text-xl font-bold uppercase mb-2">
+                  Bachelor of Computer Science & Engineering
+                </p>
+                <p>
+                  Jawaharlal Nehru Technological University, Hyderabad, India
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--~~~~~~~~~~~~~~~ My Skills ~~~~~~~~~~~~~~~-->
+      <section id="skills">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="subtitle">My Skills</h2>
+          </div>
+
+          <div class="flex flex-wrap justify-center gap-5 md:gap-10 mt-10">
+            <!-- HTML icon -->
+            <div class="skills_card max-w-44 w-full">
+              <div
+                class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300"
+              >
+                <img src="images/html.svg" alt="html" class="max-w-16" />
+              </div>
+              <p class="text-center text-primaryColorLight mt-3 capitalize">
+                HTML
+              </p>
+            </div>
+
+            <!-- css icon -->
+            <div class="skills_card max-w-44 w-full">
+              <div
+                class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300"
+              >
+                <img src="images/css.svg" alt="css" class="max-w-16" />
+              </div>
+              <p class="text-center text-primaryColorLight mt-3 capitalize">
+                CSS
+              </p>
+            </div>
+
+            <!-- bootstrap icon -->
+            <div class="skills_card max-w-44 w-full">
+              <div
+                class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300"
+              >
+                <img
+                  src="images/bootstrap.svg"
+                  alt="bootsrap"
+                  class="max-w-16"
+                />
+              </div>
+              <p class="text-center text-primaryColorLight mt-3 capitalize">
+                BootStrap
+              </p>
+            </div>
+
+            <!-- javascript icon -->
+            <div class="skills_card max-w-44 w-full">
+              <div
+                class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300"
+              >
+                <img src="images/js.svg" alt="javascript" class="max-w-16" />
+              </div>
+              <p class="text-center text-primaryColorLight mt-3 capitalize">
+                JavaScript
+              </p>
+            </div>
+
+            <!-- React.js icon -->
+            <div class="skills_card max-w-44 w-full">
+              <div
+                class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300"
+              >
+                <img src="images/react.svg" alt="javascript" class="max-w-16" />
+              </div>
+              <p class="text-center text-primaryColorLight mt-3 capitalize">
+                React.js
+              </p>
+            </div>
+
+            <!-- Java Spring boot icon -->
+            <div class="skills_card max-w-44 w-full">
+              <div
+                class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300"
+              >
+                <img src="images/spring.svg" alt="spring" class="max-w-16" />
+              </div>
+              <p class="text-center text-primaryColorLight mt-3 capitalize">
+                java Spring Boot framework
+              </p>
+            </div>
+
+            <!-- Node.js icon -->
+            <div class="skills_card max-w-44 w-full">
+              <div
+                class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300"
+              >
+                <img src="images/node.svg" alt="nodejs" class="max-w-16" />
+              </div>
+              <p class="text-center text-primaryColorLight mt-3 capitalize">
+                Node.js
+              </p>
+            </div>
+
+            <!-- Mysql icon -->
+            <div class="skills_card max-w-44 w-full">
+              <div
+                class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300"
+              >
+                <img src="images/mysql.svg" alt="mysql" class="max-w-16" />
+              </div>
+              <p class="text-center text-primaryColorLight mt-3 capitalize">
+                Mysql DB
+              </p>
+            </div>
+
+            <!-- AWS icon -->
+            <div class="skills_card max-w-44 w-full">
+              <div
+                class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300"
+              >
+                <img src="images/aws.svg" alt="aws" class="max-w-16" />
+              </div>
+              <p class="text-center text-primaryColorLight mt-3 capitalize">
+                AWS (Basics)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--~~~~~~~~~~~~~~~ My projects ~~~~~~~~~~~~~~~-->
+      <section id="recent_works">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="subtitle">Projects</h2>
+          </div>
+
+          <div class="mt-10">
+            <div class="flex flex-wrap lg:justify-center mb-8">
+              <div class="w-full lg:w-1/4">
+                <img
+                  src="images/ecommerce/1.jpg"
+                  alt="projectImg"
+                  class="w-[200px] h-[150px] rounded mb-6 cursor-pointer overlay-trigger"
+                  data-slider-id="1"
+                />
+              </div>
+              <div class="w-full max-w-xl lg:w-3/4">
+                <h4 class="mb-2 text-xl font-bold">Ecommerce Project</h4>
+                <p class="mb-4">
+                  Developed an E-commerce platform tailored for showcasing and
+                  selling products with all kinds of functionalities like
+                  searching, filtering, adding to cart, delete cart item and
+                  secure payment.
+                </p>
+                <div class="technologies flex flex-wrap gap-3">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>React.js</span>
+                  <span>Redux</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                </div>
+                <div class="flex items-center mt-5">
+                  <h5 class="mr-3 font-semibold">Github:</h5>
+                  <div class="social-icon">
+                    <a
+                      href="https://github.com/kishore906/MERN-Ecommerce-Full-Stack-App"
+                      class="z-10"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap lg:justify-center mb-8">
+              <div class="w-full lg:w-1/4">
+                <img
+                  src="images/quiz/1.png"
+                  alt="projectImg"
+                  class="w-[200px] h-[150px] rounded mb-6 cursor-pointer overlay-trigger"
+                  data-slider-id="2"
+                />
+              </div>
+              <div class="w-full max-w-xl lg:w-3/4">
+                <h4 class="mb-2 text-xl font-bold">Quiz Assessment Project</h4>
+                <p class="mb-4">
+                  Developed a comprehensive Quiz Assessment Platform featuring
+                  user authentication, dynamic quizzes, detailed performance
+                  dashboards, and robust admin management capabilities.
+                </p>
+                <div class="technologies flex flex-wrap gap-3">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>React.js</span>
+                  <span>Redux</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                </div>
+                <div class="flex items-center mt-5">
+                  <h5 class="mr-3 font-semibold">Github:</h5>
+                  <div class="social-icon">
+                    <a
+                      href="https://github.com/kishore906/quiz-MERN-App"
+                      class="z-10"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap lg:justify-center mb-8">
+              <div class="w-full lg:w-1/4">
+                <img
+                  src="images/realestate/1.png"
+                  alt="projectImg"
+                  class="w-[200px] h-[150px] rounded mb-6 cursor-pointer overlay-trigger"
+                  data-slider-id="3"
+                />
+              </div>
+              <div class="w-full max-w-xl lg:w-3/4">
+                <h4 class="mb-2 text-xl font-bold">Real Estate Project</h4>
+                <p class="mb-4">
+                  Developed a full-stack real estate platform with features
+                  including authentication (register/login), property search
+                  with advanced filters, profile management, and real-time chat
+                  functionality using socket.io. Enabled property owners to
+                  upload and manage listings efficiently.
+                </p>
+                <div class="technologies flex flex-wrap gap-3">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>SASS</span>
+                  <span>React.js</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                </div>
+                <div class="flex items-center mt-5">
+                  <h5 class="mr-3 font-semibold">Github:</h5>
+                  <div class="social-icon">
+                    <a
+                      href="https://github.com/kishore906/Real-Estate-MERN-App"
+                      class="z-10"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap lg:justify-center mb-8">
+              <div class="w-full lg:w-1/4">
+                <img
+                  src="images/job_portal/1.jpg"
+                  alt="projectImg"
+                  class="w-[200px] h-[150px] rounded mb-6 cursor-pointer overlay-trigger"
+                  data-slider-id="4"
+                />
+              </div>
+              <div class="w-full max-w-xl lg:w-3/4">
+                <h4 class="mb-2 text-xl font-bold">Job Tracking Project</h4>
+                <p class="mb-4">
+                  Developed an user-friendly job tracking web application with
+                  key features include searching for job, saving a job, applying
+                  for a job, checking status of applied job, etc.
+                </p>
+                <div class="technologies flex flex-wrap gap-3">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>React.js</span>
+                  <span>Redux</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                </div>
+                <div class="flex items-center mt-5">
+                  <h5 class="mr-3 font-semibold">Github:</h5>
+                  <div class="social-icon">
+                    <a
+                      href="https://github.com/kishore906/MERN-Job-Portal-App"
+                      class="z-10"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap lg:justify-center mb-8">
+              <div class="w-full lg:w-1/4">
+                <img
+                  src="images/blog_project/1.jpg"
+                  alt="projectImg"
+                  class="w-[200px] h-[150px] rounded mb-6 cursor-pointer overlay-trigger"
+                  data-slider-id="5"
+                />
+              </div>
+              <div class="w-full max-w-xl lg:w-3/4">
+                <h4 class="mb-2 text-xl font-bold">Blog Project</h4>
+                <p class="mb-4">
+                  Developed a blog platform where users can write and read
+                  engaging content. Key features include creating a blog,
+                  editing the blog, deleting the blog and commenting on other
+                  blogs.
+                </p>
+                <div class="technologies flex flex-wrap gap-3">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>React.js</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                </div>
+                <div class="flex items-center mt-5">
+                  <h5 class="mr-3 font-semibold">Github:</h5>
+                  <div class="social-icon">
+                    <a
+                      href="https://github.com/kishore906/MERN-Blog-App"
+                      class="z-10"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- overlay -->
+          <div
+            id="imageOverlay"
+            class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 hidden"
+          >
+            <div class="relative w-full max-w-xl">
+              <!-- Slider container -->
+              <div id="slider" class="overflow-hidden relative">
+                <div
+                  id="sliderInner"
+                  class="slider-inner flex transition-transform duration-500"
+                >
+                  <!-- Dyamic images will be inserted here -->
+                </div>
+              </div>
+
+              <!-- Slider controls -->
+              <button
+                id="prevSlide"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 ml-3 rounded-full text-2xl"
+              >
+                &#10094;
+              </button>
+              <button
+                id="nextSlide"
+                class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 mr-3 rounded-full text-2xl"
+              >
+                &#10095;
+              </button>
+            </div>
+
+            <button
+              id="closeOverlay"
+              class="absolute top-10 right-8 text-white bg-gray-800 px-4 py-2 rounded-full text-3xl"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
+      <section id="contact">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="subtitle">Contact</h2>
+          </div>
+
+          <div
+            class="flex flex-wrap justify-start md:justify-center items-center gap-16 pl-16 md:pl-0 mt-14"
+          >
+            <div class="flex items-start gap-4">
+              <div
+                class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight h-10 w-10 lg:h-14 lg:w-14 rounded-full grid place-items-center"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="space-y-1">
+                <p class="text-sm">Mobile</p>
+                <p
+                  class="font-bold hover:text-primaryColorLight duration-300 cursor-pointer"
+                >
+                  +61452497749
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight h-10 w-10 lg:h-14 lg:w-14 rounded-full grid place-items-center"
+              >
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="space-y-1">
+                <p class="text-sm">Email</p>
+                <p
+                  class="font-bold hover:text-primaryColorLight duration-300 cursor-pointer"
+                >
+                  kkishore906@gmail.com
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight h-10 w-10 lg:h-14 lg:w-14 rounded-full grid place-items-center"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="space-y-1">
+                <p class="text-sm">Address</p>
+                <p
+                  class="font-bold hover:text-primaryColorLight duration-300 cursor-pointer"
+                >
+                  Sydney, Australia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+    <a
+      href="#"
+      id="scroll-up"
+      class="fixed right-10 -bottom-1/2 bg-primaryColor px-4 py-2 rounded-full text-lg text-whiteColor z-50 hover:-translate-y-1 ease-in duration-200"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+    <script src="main.js"></script>
+  </body>
+</html>
