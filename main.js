@@ -120,21 +120,6 @@ const imageSets = {
     "images/quiz/21.png",
   ],
   3: [
-    "images/realestate/1.png",
-    "images/realestate/2.png",
-    "images/realestate/3.png",
-    "images/realestate/4.png",
-    "images/realestate/5.png",
-    "images/realestate/6.png",
-    "images/realestate/7.png",
-    "images/realestate/8.png",
-    "images/realestate/9.png",
-    "images/realestate/10.png",
-    "images/realestate/11.png",
-    "images/realestate/12.png",
-    "images/realestate/13.png",
-  ],
-  4: [
     "images/job_portal/1.jpg",
     "images/job_portal/2.jpg",
     "images/job_portal/3.jpg",
@@ -163,7 +148,7 @@ const imageSets = {
     "images/job_portal/26.jpg",
     "images/job_portal/27.jpg",
   ],
-  5: [
+  4: [
     "images/blog_project/1.jpg",
     "images/blog_project/2.jpg",
     "images/blog_project/3.jpg",
