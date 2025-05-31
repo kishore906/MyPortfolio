@@ -146,7 +146,6 @@ const imageSets = {
     "images/job_portal/24.jpg",
     "images/job_portal/25.jpg",
     "images/job_portal/26.jpg",
-    "images/job_portal/27.jpg",
   ],
   4: [
     "images/lms_project/1.jpg",
