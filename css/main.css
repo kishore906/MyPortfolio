@@ -702,7 +702,7 @@ section {
 @media (min-width: 976px) {
   .title,
   .subtitle {
-    font-size: 3rem;
+    font-size: 40px;
     line-height: 1;
   }
 }
