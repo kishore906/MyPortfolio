@@ -703,7 +703,7 @@ section {
   .title,
   .subtitle {
     font-size: 3rem;
-    line-height: 1.5rem;
+    line-height: 1;
   }
 }
 
