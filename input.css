@@ -44,6 +44,10 @@
     @apply scale-x-100 origin-left;
   }
 
+  .nameStyle {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+
   .title,
   .subtitle {
     @apply text-4xl md:text-5xl xl:text-[60px] font-bold bg-gradient-to-r from-primaryColorLight to-primaryColor dark:to-whiteColor inline-block text-transparent bg-clip-text pb-2;
