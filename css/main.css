@@ -710,7 +710,7 @@ section {
 @media (min-width: 1400px) {
   .title,
   .subtitle {
-    font-size: 60px;
+    font-size: 3rem;
   }
 }
 
